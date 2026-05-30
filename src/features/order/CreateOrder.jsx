@@ -18,12 +18,13 @@ const isValidPhone = (str) =>
 function CreateOrder() {
   const [withPriority, setWithPriority] = useState(false);
   const {
-    username,
+    userName,
     status: addressStatus,
     position,
     address,
     error: errorAddress,
   } = useSelector((state) => state.user);
+  console.log(userName);
   //
   const isLoadingAddress = addressStatus === "loading";
   const navigation = useNavigation();
@@ -52,7 +53,7 @@ function CreateOrder() {
             className="input grow capitalize"
             type="text"
             name="customer"
-            defaultValue={username}
+            defaultValue={userName}
             required
           />
         </div>
