@@ -6,11 +6,11 @@ function Error() {
   console.log(error);
 
   return (
-    <div>
-      <h1>Something went wrong 😢</h1>
-      <p>{error.data || error.message}</p>
+    <div className="h-dvh px-8 py-20 text-center">
+      <h1 className="text-2xl font-semibold">Something went wrong 😢</h1>
+      <p className="m-8 space-x-6 text-lg">{error.data || error.message}</p>
 
-      <LinkButton>&larr; Go back</LinkButton>
+      <LinkButton to="/">&larr; Go back</LinkButton>
     </div>
   );
 }

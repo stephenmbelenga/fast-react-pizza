@@ -19,6 +19,28 @@ Fast React Pizza is a small single-page app demonstrating a clear frontend archi
 - Simple user creation and username component
 - Modular services for external APIs (geocoding, restaurants)
 
+## Recent Changes
+
+- Added a Redux store and slices:
+  - `src/store.js`
+  - `src/features/cart/cartSlice.js` (cart state + actions)
+  - `src/features/user/userSlice.js` (basic user state)
+- Menu and cart UI components:
+  - `src/features/menu/Menu.jsx`, `src/features/menu/MenuItem.jsx`
+  - `src/features/cart/Cart.jsx`, `src/features/cart/CartItem.jsx`, `src/features/cart/CartOverview.jsx`
+  - `src/features/cart/UpdateItemQuantity.jsx`, `src/features/cart/DeleteItem.jsx`, `src/features/cart/EmptyCart.jsx`
+- Order flow components:
+  - `src/features/order/CreateOrder.jsx`, `src/features/order/Order.jsx`, `src/features/order/OrderItem.jsx`, `src/features/order/SearchOrder.jsx`, `src/features/order/UpdateOrder.jsx`
+- User components:
+  - `src/features/user/CreateUser.jsx`, `src/features/user/UserName.jsx`
+- Services for external APIs:
+  - `src/services/apiGeocoding.js`, `src/services/apiRestaurant.js`
+- Shared UI and utilities:
+  - `src/ui/` components (layout, buttons, header, loader, error)
+  - `src/utils/helpers.js`
+
+These files reflect the current feature set and were added or updated to support the menu, cart, order, and user flows.
+
 ## Tech stack
 
 - React (JSX)
